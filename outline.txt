@@ -2,6 +2,16 @@ Magnus is a good guy
 He is always doing well.
 I would love to be with him for life
 
+The pretty switch of the git log provides a multitude of ways to format git log output, especially when a developer uses the custom string. For example, if a developer provides the string %ad as the parameter to the pretty switch, they will see the git log graph with nothing but commit dates next to the branch and merge points.
+
+The %h string will display nothing but a short commit hash, and %s will display nothing but the commit message next to the git log graphs’ commit points.
+
+graph@log:~$ git log –graph –pretty=”%h” –date=short
+
+graph@log:~$ git log –graph –pretty=”%s” –date=human
+
+If you wanted to get real crazy you could even start coloring coding the display with a git log graph call like the one that follows:
+
 
 Hola Magnus,
 
@@ -19,5 +29,8 @@ Por ello, te comparto 3 opciones de días y horarios para que me confirmes cuál
 Te solicito tener a bien de confirmarme la opción de tu interés fin de enviarte el invite de Calendar. Si no puedes en esos horarios, podemos agendar un call con el área de Admisiones.
 
 Shalom y gracias!
+<<<<<<< HEAD
 Best regards,
 Magnus
+=======
+>>>>>>> maven
